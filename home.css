@@ -1,0 +1,108 @@
+.main {
+    animation: cssAnimation 1.5s ease-in 3s; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  
+  @keyframes cssAnimation {
+    100%   { visibility: visible;
+  }
+    from   {
+      opacity: 0;
+  }
+    to     {
+      opacity: 1;
+  }
+  }
+  
+    button{
+      transition: transform 595ms;
+      transform: scale(1);
+    }
+  
+    button:hover{
+      transform: translateX(3px) scale(1.1);
+    }
+  
+    .enlarge{
+      transition: transform 595ms;
+    }
+  
+    .enlarge:hover{
+      transform: scale(1.1) translateX(10vh);
+    }
+  table{
+    border-color: red;
+    border-radius: 15px;
+    border-width: 15px;
+    border-spacing: 5px;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #444444;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6e00b3; 
+  }
+  
+  .loadm{
+    animation: bye 2s ease-in 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: -95vh;
+  }
+  
+  @keyframes spin{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading{
+    animation: spin 1.5s infinite;
+    animation-fill-mode: forwards;
+    padding: 3vh;
+    height: 1vh;
+    width: 1vh;
+    border-radius: 50%;
+    border-top: solid red;
+    border-bottom: solid grey;
+    border-right: solid grey;
+    border-left: solid grey;
+    background-color: black;
+  }
+  
+  @keyframes bye{
+    100%{
+    }
+    from{
+      opacity: 1;
+      visibility: visible;
+    }
+    to{
+      opacity: 0;
+      padding: 0;
+      height: 0;
+      width: 0;
+      visibility: hidden;  
+  }
+  }
+  
+  .tab{
+    color: blueviolet;
+    font-size: 1cm;
+  }
+  

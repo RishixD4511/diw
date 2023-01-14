@@ -1,0 +1,152 @@
+.main {
+    animation: cssAnimation 1.5s ease-in 10s; 
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  
+  @keyframes cssAnimation {
+    100%   { visibility: visible;
+  }
+    from   {
+      opacity: 0;
+  }
+    to     {
+      opacity: 1;
+  }
+  }
+  
+    button{
+      transition: transform 595ms;
+      transform: scale(1);
+      border-radius: 0;
+      background-color: green;
+    }
+  
+    button:hover{
+      transform: translateX(3px) scale(1.1);
+    }
+  
+    .enlarge{
+      transition: transform 595ms;
+    }
+  
+    .enlarge:hover{
+      transform: scale(1.1) translateX(10vh);
+    }
+  table{
+    border-color: red;
+    border-radius: 15px;
+    border-width: 15px;
+    border-spacing: 5px;
+  }
+
+.starterimg{
+  border: 16px;
+  border-radius: 20px 40px;
+  border-top: 16px solid green;
+  border-left: 16px solid greenyellow;
+  border-right: 16px solid green;
+  border-bottom: 16px solid greenyellow;
+  animation: starterimg 1.5s ease-in 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: -174vh;
+  left: 7vh;
+  height: 95vh;
+  width: 180vh;
+  opacity: 0;
+}
+
+@keyframes starterimg{
+  from{
+    opacity: 0;
+  } 
+  to{
+    opacity: 1;
+  }
+}
+
+.stimg{
+  animation: hideimg 1.5s ease-in 8s;
+  animation-fill-mode: backwards;
+  visibility: hidden;
+}
+
+@keyframes hideimg{
+  100%{
+    visibility: hidden;
+  }
+  from{
+    opacity: 1;
+    visibility: visible;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.text1 {
+  position: relative;
+  top: -27vh;
+  left: 40vh;
+}
+
+.thought{
+  position: relative;
+  top: 7.5vh;
+  left: 10px;
+}
+
+.vid1{
+  position: relative;
+  top: -31vh;
+  left: 100vh;
+}
+
+.vidt1{
+  position: relative;
+  top: -35vh;
+  text-shadow: 1px 1px black;
+  background-color: green;
+}
+
+.actionnow {
+  position: relative;
+  top: -39vh;
+  left: 20vh;
+}
+
+.actbtn {
+  border-color: green;
+  border-radius: 0px;
+  background-color: green;
+  font-family: arial;
+  font-size: 3.8vh;}
+
+body {
+  overflow-x: hidden;
+}
+
+.pos1{
+  position: relative;
+  left: 20vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #444444;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: green; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6e00b3; 
+}
